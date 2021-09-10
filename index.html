@@ -21,6 +21,24 @@
         padding-bottom: 20px;
         font-family: "Raleway", sans-serif;
     }
+    /*Fade Hover Effect*/
+
+    .hover-fade img {
+        width: 100%;
+        height: auto;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+    }
+    .hover-fade:hover img {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
 </style>
 <body>
 
@@ -28,33 +46,33 @@
     <div class="">
         <h3 class="text-center mt-5 pb-5 border-bottom">Our Doctors</h3>
 
-        <div class="d-flex flex-row justify-content-around mt-5 w-100 pb-5 border-bottom" style="overflow-x: auto;">
-            <div id="alosert-head" class="text-center cursor-pointer">
+        <div class="d-flex flex-row justify-content-around pt-3 w-100 border-bottom" style="overflow-x: auto;">
+            <div id="alosert-head" class="text-center cursor-pointer hover-fade">
                 <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrAc.png" style="height:200px;" />
                 <br/>Dr Alosert
             </div>
-            <div id="munir-head" class="text-center cursor-pointer">
+            <div id="munir-head" class="text-center cursor-pointer hover-fade">
                 <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrMc.png" style="height:200px;" />
                 <br/>Dr Munir
             </div>
-            <div id="sami-head" class="text-center cursor-pointer">
+            <div id="sami-head" class="text-center cursor-pointer hover-fade">
                 <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrSamic.png" style="height:200px;" />
                 <br/>Dr Sami
             </div>
-            <div id="shuaib-head" class="text-center cursor-pointer">
+            <div id="shuaib-head" class="text-center cursor-pointer hover-fade">
                 <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrShuaibc.png" style="height:200px;" />
                 <br/>Dr Shuaib
             </div>
         </div>
 
         <div id="dr-alosert" class="d-none">
-            <div class="row">
-                <div class="col-sm-4 p-3">
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="p-3">
                     <div class="d-flex justify-content-center">
                         <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrAc.png" class="align-self-center" style="max-height:500px;" />
                     </div>
                 </div>
-                <div class="col-sm-8 py-3 px-5">
+                <div class="py-3 px-5" style="max-width: 800px;">
                     <h2 class="doctor-name">Dr Alosert</h2>
                     <ul style="margin-top: 1rem;">
                         <li>  <b>Dr Alosert</b> is an experienced Principal Hair Restoration Surgeon in the UK; with 27-year-Multicultural Medical Experience, having qualified in 1994; He is a Consultant in Emergency Medicine, an experienced Musculoskeletal Sonographer and MSK ultrasound Injection Therapist.</li>
@@ -176,13 +194,13 @@
         </div>
 
         <div id="dr-munir" class="d-none">
-            <div class="row">
-                <div class="col-sm-4 p-3">
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="p-3">
                     <div class="d-flex justify-content-center">
                         <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrMc.png" class="align-self-center" style="max-height:500px;" />
                     </div>
                 </div>
-                <div class="col-sm-8 py-3 px-5">
+                <div class="py-3 px-5" style="max-width: 800px;">
                     <h2 class="doctor-name">Dr Munir</h2>
                     <ul style="margin-top: 1rem;">
                         <li>  Worked for 8 years in the hair transplant industry.</li>
@@ -409,13 +427,13 @@
         </div>
 
         <div id="dr-sami" class="d-none">
-            <div class="row">
-                <div class="col-sm-4 p-3">
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="p-3">
                     <div class="d-flex justify-content-center">
                         <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrSamic.png" class="align-self-center" style="max-height:500px;" />
                     </div>
                 </div>
-                <div class="col-sm-8 py-3 px-5">
+                <div class="py-3 px-5" style="max-width: 800px;">
                     <h2 class="doctor-name">Dr Sami</h2>
                     <ul style="margin-top: 1rem;">
                         <li>  Vast experience in the hair transplant industry. Highly sought-after surgeon having worked on many celebrity clientele. Having qualified over 12 years ago, he has attained breadth of surgical experience in many disciplines prior to specialising in hair restoration surgery. He has worked with many of the worlds leading hair transplant surgeons, having performed over 1500 successful procedures.</li>
@@ -536,13 +554,13 @@
         </div>
 
         <div id="dr-shuaib" class="d-none">
-            <div class="row">
-                <div class="col-sm-4 p-3">
+            <div class="d-flex flex-row flex-wrap justify-content-center">
+                <div class="p-3">
                     <div class="d-flex justify-content-center">
                         <img src="https://patient-portal.s3.fr-par.scw.cloud/website/images/Doctors/DrShuaibc.png" class="align-self-center" style="max-height:500px;" />
                     </div>
                 </div>
-                <div class="col-sm-8 py-3 px-5 mx-auto">
+                <div class="py-3 px-5" style="max-width: 800px;">
                     <h2 class="doctor-name">Dr Shuaib</h2>
                     <ul style="margin-top: 1rem;">
                         <li>  Dr Shuaib is a highly experienced Hair Transplant Surgeon with more than 3 years of experience and over 1500 successful cases in the hair restoration industry.</li>
@@ -680,17 +698,6 @@
                 $('#dr-shuaib').removeClass('d-none');
                 $('#dr-munir, #dr-sami, #dr-alosert').addClass('d-none');
             });
-
- 
-
-            var glide = new Glide('.kenton-images', {
-                type: 'carousel',
-                perView: 2,
-                focusAt: 'center',
-       
-            });
-
-            glide.mount();
         });
     </script>
 
